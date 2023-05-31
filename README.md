@@ -1,3 +1,4 @@
+<img src="https://capsule-render.vercel.app/api?type=Slice&color=black&height=200&section=header&text=Mostel&fontSize=90" />
 # Mostel_Paper🖌️
 Mostel Code & Paper review
 
@@ -32,7 +33,7 @@ Mostel Code & Paper review
 ### 목적
 백그라운드 이미지와 기존의 텍스처와 텍스트 스타일을 유지하면서 텍스트를 수정하는 것을 목적으로 한다.
 
-### STE 단점
+### STE 단점😞
 - 백그라운드 텍스처를 보존하기 어렵다.
 - 훈련 데이터가 합성 이미지이고 실제 이미지와 차이가 있어서 도메인 간격(Domain gap)이 발생하며, 실제 추론(inference) 시에 문제가 발생할 수 있다.
 - 이미지 전체 픽셀을 고려해야 하는데, 이는 텍스트가 수정되는 동안에도 백그라운드가 바뀌면 안되기 때문에 어려움이 있다.

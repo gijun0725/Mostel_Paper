@@ -22,7 +22,7 @@ Mostel transfer review and code description
   
   -장점 : 어떠한 단어라도 일관성있게 수정가능하고 이미지내에 모든단어도 가능
   
-  STE 단점
+*STE 단점
   
     1.백그라운드 텍스처를 보존하기 어렵다
     

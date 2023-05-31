@@ -23,6 +23,7 @@ Mostel transfer review and code description
   -장점 : 어떠한 단어라도 일관성있게 수정가능하고 이미지내에 모든단어도 가능
   
   -STE 단점
+  
     1.백그라운드 텍스처를 보존하기 어렵다<br>
     
     2.Domain gap(훈련데이터는 합성이미지이고 실제이미지와 다르기 때문에 생기는 gap)이 생겨나서 실제 inference할때 문제가 발생<br>

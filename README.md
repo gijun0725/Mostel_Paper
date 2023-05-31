@@ -10,8 +10,9 @@ Mostel transfer review and code description
 | MOSTEL | Modifiying Scene Text image at Stroke Level | 이미지에 있는 텍스트를 Stroke level로 변환 |
 | SLM | Stroke level modification |  이미지의 선명도와 선의 굵기를 수정하여 이미지의 외형을 변화시키는 작업|
 
+
+1.Abstract
 ---
-1.Abstract<br>
   -stroke guidance maps를 통해서 수정하고자하는 영역을 지정
   
   -모든 픽셀을 고려해서 하는 작업이 아니다 텍스트가 있는 부분에 집중

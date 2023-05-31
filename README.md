@@ -1,5 +1,5 @@
 # Mostel_Paper
-Mostel transfer review and code description
+Mostel Code & Paper review
 
 
 *용어 정리
@@ -11,7 +11,7 @@ Mostel transfer review and code description
 | SLM | Stroke level modification |  이미지의 선명도와 선의 굵기를 수정하여 이미지의 외형을 변화시키는 작업|
 
 
-1.Abstract
+Abstract
 ---
   -stroke guidance maps를 통해서 수정하고자하는 영역을 지정
   
@@ -19,9 +19,9 @@ Mostel transfer review and code description
   
   -합성이미지와 실제사진의 학습을 위해 반지도 학습을 진행
   
----  
-2.Introduction
 
+Introduction
+---
   -목적 : 백그라운드 이미지와 기존의 텍스처와 텍스트 스타일을 유지하면서 텍스트를 수정
   
   -장점 : 어떠한 단어라도 일관성있게 수정가능하고 이미지내에 모든단어도 가능

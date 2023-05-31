@@ -3,5 +3,5 @@ Mostel transfer review and code description
 
 | name   | Full_name   | Description   |
 |-------|-------|-------|
-| STE | Scean text editiong | Text가 있는 장면에서의 문자 편집 작업 |
+| STE | Scean text editiong | 백그라운드와 스타일을 유지하며 다른 텍스트로 바꾸는 작업 |
 | 내용4 | 내용5 | 내용6 |

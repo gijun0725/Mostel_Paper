@@ -89,6 +89,7 @@ Mostel Code & Paper review
 
 - 실제 이미지에서는 라벨값이 없기때문에 기존 이미지에서 텍스트를 지운후에 기존의 즉 I_s가 지워진 상태에서 다시 I_s를 재구성하기 때문에 합성이미지와 구조는 같지만 다른 의미를 가지며 이때 사용하는 Loss는  Lrec (재구성 손실)과 Lvgg (스타일 손실) 두가지로 구성된다.
 - 위에서 언급한 방법은 다른이미지도 똑같은 결과를 초래 할 수 있는 항등매핑의 가능성이 있어서 단점이라고 볼 수 있다.
+- 학습에는 14개의 합성이미지 2개의 실제이미지를 이용하였다
 ![image](https://github.com/gijun0725/Mostel_Paper/assets/119472512/d300ed15-a244-4cbf-aa8a-28c6cf4b0ae2)
 
 
@@ -108,3 +109,20 @@ Real Data (실제 데이터):
 - 텍스트 영역을 지정하고 인식기 손실을 계산하기 위해 텍스트 주석(annotation)만 필요
 - 평가를 위해 Tamper-Scene 데이터셋을 사용하며, 이는 ICDAR 2013, SVT, SVTP, IIIT, MLT-2019 및 COCO-Text 등의 여러 씬 텍스트 데이터셋을 조합
 - 심하게 왜곡되거나 인식하기 어려운 이미지는 필터링하여 총 7,725개의 이미지로 구성
+
+
+### Evaluation metrics
+- PSNR (Peak Signal-to-Noise Ratio): PSNR은 이미지 또는 비디오의 품질을 측정하는 데 사용되는 지표이다. PSNR이 높을수록 원본과의 차이가 적어지고, 더 나은 품질을 가진다고 할 수 있다.
+- MSE (Mean Squared Error): MSE는 이미지 또는 비디오의 픽셀 간 차이를 측정하는 지표이다. MSE가 낮을수록 원본과의 차이가 적어지고, 더 나은 품질을 가진다고 할 수 있다.
+- SSIM (Structural Similarity Index): SSIM은 이미지 품질의 구조적 유사성을 측정하는 지표 로서 두 이미지 간의 구조적 유사성을 비교하여 더 높은 SSIM 값은 더 나은 품질을 나타낸다.
+- FID (Fréchet Inception Distance): FID는 InceptionV3 모델로 추출된 특징들 간의 거리를 측정하는 지표이다. 낮은 FID 값은 더 나은 품질을 나타내며, 이미지들의 특징이 더 유사하다는 것을 의미한다.
+
+### 실제 데이터 비교 [각 기능을 추가하거나 제거했을 경우]
+![image](https://github.com/gijun0725/Mostel_Paper/assets/119472512/c176e736-987c-434f-8705-da9b81efd382)
+- w/o SLM : SLM 사용하지 않음
+- w/o BF : Background Filtering사용하지 않음
+- w/o SA : Style augmentaion 사용하지않음
+- w/gradient : 기울기를 추가하면 똑같은 이미지 나올 수 있음
+- w/o : recognizer를 제외했을경우
+- MOSTEL: 위에서 모든걸 적용하였을경우[가장 좋은 케이스]
+

@@ -9,8 +9,8 @@ Mostel Code & Paper review
 | STE | Scean text editing | 백그라운드와 스타일을 유지하며 다른 텍스트로 바꾸는 작업 |
 | MOSTEL | Modifiying Scene Text image at Stroke Level | 이미지에 있는 텍스트를 Stroke level로 변환 |
 | SLM | Stroke level modification |  이미지의 선명도와 선의 굵기를 수정하여 이미지의 외형을 변화시키는 작업|
-| BRM | Background Reconstruction Module | 백그라운드 만 뽑아내기위한 모듈|
-| TMM | Text Modification Module | 텍스트 만 뽑아내기위한 모듈|
+| BRM | Background Reconstruction Module | 백그라운드만 뽑아내기 위한 모듈|
+| TMM | Text Modification Module | 텍스트만 뽑아내기 위한 모듈|
 | SLM | SLM | 백그라운드 필터링 하는 모듈 |
 
 

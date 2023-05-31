@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=Slice&color=black&height=200&section=header&text=Mostel&fontSize=90" />
+<img src="https://capsule-render.vercel.app/api?type=Slice&color=yellow&height=200&section=header&text=Mostel&fontSize=90" />
 # Mostel_Paper🖌️
 Mostel Code & Paper review
 

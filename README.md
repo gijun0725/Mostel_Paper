@@ -56,16 +56,16 @@ Mostel Code & Paper review
 
 ### Methodology
 
--MOSTEL은 가독성이 좋지않은 글자를 타겟으로 하였기에 기존의 SRNet의 업그레이드 버전이라 할 수 있다.
--erase-and-write paradigm [unpaired 방법이라고 이해]
--design a novel stroke-level modification[좀더 심화된 SRNet 방법]
--Is 의 인풋결과 Guides[Only text]와 Os[Only Background]가 출력
--텍스트의 특성을 강하게 가지고 있는 Is와 Is의 기하학적 특성을 적용한 It는서로 합쳐진다.
+- MOSTEL은 가독성이 좋지않은 글자를 타겟으로 하였기에 기존의 SRNet의 업그레이드 버전이라 할 수 있다.
+- erase-and-write paradigm [unpaired 방법이라고 이해]
+- design a novel stroke-level modification[좀더 심화된 SRNet 방법]
+- Is 의 인풋결과 Guides[Only text]와 Os[Only Background]가 출력
+- 텍스트의 특성을 강하게 가지고 있는 Is와 Is의 기하학적 특성을 적용한 It는서로 합쳐진다.
 
 ### Background Reconstruction Module
 
--인코더 디코더의 구조로 되어있고 좀더 확실한 이미지를 얻기위한 up-sampling이 적용된다.
--텍스트를 바꾸면서 백그라운드를 유지하고 싶지만 두개가 한번에 작업되다 보니 서로에게 영향이 있을수 밖에 없기때문에 SRNet도 어느정도 번짐이나 Blur같은 현상을 피할수 없다.
--이를 해결하기 위한 개념은 O^s와 Guide_s를 통하여 SLM(백그라운드 필터링 하는 모듈)을 통과시켜 텍스트가 있는 부분을 알려줘서 좀더 잘 백그라운드를 생성한다.
+- 인코더 디코더의 구조로 되어있고 좀더 확실한 이미지를 얻기위한 up-sampling이 적용된다.
+- 텍스트를 바꾸면서 백그라운드를 유지하고 싶지만 두개가 한번에 작업되다 보니 서로에게 영향이 있을수 밖에 없기때문에 SRNet도 어느정도 번짐이나 Blur같은 현상을 피할수 없다.
+- 이를 해결하기 위한 개념은 O^s와 Guide_s를 통하여 SLM(백그라운드 필터링 하는 모듈)을 통과시켜 텍스트가 있는 부분을 알려줘서 좀더 잘 백그라운드를 생성한다.
 
   

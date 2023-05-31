@@ -3,11 +3,13 @@ Mostel transfer review and code description
 
 
 *용어 정리
+---
 | name   | Full_name   | Description   |
 |-------|-------|-------|
 | STE | Scean text editing | 백그라운드와 스타일을 유지하며 다른 텍스트로 바꾸는 작업 |
 | MOSTEL | Modifiying Scene Text image at Stroke Level | 이미지에 있는 텍스트를 Stroke level로 변환 |
 | SLM | Stroke level modification |  이미지의 선명도와 선의 굵기를 수정하여 이미지의 외형을 변화시키는 작업|
+
 ---
 1.Abstract<br>
   -stroke guidance maps를 통해서 수정하고자하는 영역을 지정
@@ -15,6 +17,7 @@ Mostel transfer review and code description
   -모든 픽셀을 고려해서 하는 작업이 아니다 텍스트가 있는 부분에 집중
   
   -합성이미지와 실제사진의 학습을 위해 반지도 학습을 진행
+  
 ---  
 2.Introduction
 
@@ -33,4 +36,5 @@ Mostel transfer review and code description
     
   4.두개의 작업을 하나로 합치다보니 결과도 안좋고 학습데이터로 편향되어 결과가 나와서 실제사진에는 부적합한 결과도출
   
+  ---
   

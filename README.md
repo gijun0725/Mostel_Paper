@@ -9,6 +9,10 @@ Mostel Code & Paper review
 | STE | Scean text editing | 백그라운드와 스타일을 유지하며 다른 텍스트로 바꾸는 작업 |
 | MOSTEL | Modifiying Scene Text image at Stroke Level | 이미지에 있는 텍스트를 Stroke level로 변환 |
 | SLM | Stroke level modification |  이미지의 선명도와 선의 굵기를 수정하여 이미지의 외형을 변화시키는 작업|
+| BRM | Background Reconstruction Module | 백그라운드 만 뽑아내기위한 모듈|
+| TMM | Text Modification Module | 텍스트 만 뽑아내기위한 모듈|
+| SLM | SLM | 백그라운드 필터링 하는 모듈 |
+
 
 
 # Abstract
@@ -40,6 +44,8 @@ Mostel Code & Paper review
 ### Style Transfer
 
 - [(Zhu et al. 2017] 사이클 일관성 손실을추가하여 도메인사이에서 일관성을 보장
+- [Yang et al. 2017] 거리기반의 특성으로 최초의 스타일 트랜스퍼 적용
+- [(Yang et al. 2019a)] 스타일화 및 비스타일화 서브네트워크를 사용하여 양쪽의 작업을 모두 수행
 
 
   

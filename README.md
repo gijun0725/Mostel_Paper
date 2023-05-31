@@ -4,7 +4,7 @@ Mostel transfer review and code description
 | name   | Full_name   | Description   |
 |-------|-------|-------|
 | STE | Scean text editing | 백그라운드와 스타일을 유지하며 다른 텍스트로 바꾸는 작업 |
-| MOSTEL | Modifiying Scene Text image at Stroke Level | 정의 |
+| MOSTEL | Modifiying Scene Text image at Stroke Level | 이미지에 있는 텍스트를 Stroke level로 변환 |
 | SLM | Stroke level modification |  이미지의 선명도와 선의 굵기를 수정하여 이미지의 외형을 변화시키는 작업|
 
 1.Abstract<br>

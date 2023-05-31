@@ -76,6 +76,9 @@ Mostel Code & Paper review
 - FC에서 글자의 위치를 잡기위해 anchor점들을 얻어내고 TPS에서 이점을 기준으로 I_t의 텍스트의 위치를 재조정 한다
 - 위에서 언급했듯이 백그라운드를 제거한 텍스트만 있는 이미지를 만들어 낸다 추가적으로 Augmentaion이 진행되는데 이는 이전에서 TPS에서의 위치값으로 I_t가 미리 변경되기 때문에 Augmentation을 진행한다고 해서 위치좌표값이 변하지 않는다.
 
+![image](https://github.com/gijun0725/Mostel_Paper/assets/119472512/038ce4a7-ff77-43f1-b95c-dfa7e4a38264)
+
+
 ### MM[Modification Module]
 
 - Up-sampling을 통하여 O^t와 Guide_t를 생성해 낸다.

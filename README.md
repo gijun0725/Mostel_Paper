@@ -47,5 +47,8 @@ Mostel Code & Paper review
 - [Yang et al. 2017] 거리기반의 특성으로 최초의 스타일 트랜스퍼 적용
 - [(Yang et al. 2019a)] 스타일화 및 비스타일화 서브네트워크를 사용하여 양쪽의 작업을 모두 수행
 
+### Scene Text Editing
+- SRNet first proposes the word-level editing method
+
 
   

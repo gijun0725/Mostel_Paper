@@ -3,7 +3,7 @@ Mostel Code & Paper review
 
 
 ###용어 정리
----
+
 | name   | Full_name   | Description   |
 |-------|-------|-------|
 | STE | Scean text editing | 백그라운드와 스타일을 유지하며 다른 텍스트로 바꾸는 작업 |

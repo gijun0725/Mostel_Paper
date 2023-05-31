@@ -85,7 +85,7 @@ Mostel Code & Paper review
 - The gradient of connections is blocked 이문장은 skip-connection과 같은 역할로 입력값과 똑같은 텍스트가 나오지 않게 하기위해 사용하는 방식으로 기울기 소실 문제를 해결한다.
 - SLM은 이러한 정보를 가지고 텍스트와 백그라운드를 더 잘구분할 수 있는것이다. 
 
-### Semi-supervised Hybrid Learning
+### SHL[Semi-supervised Hybrid Learning]
 
 - 실제 이미지에서는 라벨값이 없기때문에 기존 이미지에서 텍스트를 지운후에 기존의 즉 I_s가 지워진 상태에서 다시 I_s를 재구성하기 때문에 합성이미지와 구조는 같지만 다른 의미를 가지며 이때 사용하는 Loss는  Lrec (재구성 손실)과 Lvgg (스타일 손실) 두가지로 구성된다.
 - 위에서 언급한 방법은 다른이미지도 똑같은 결과를 초래 할 수 있는 항등매핑의 가능성이 있어서 단점이라고 볼 수 있다.

@@ -15,7 +15,6 @@ Mostel Code & Paper review
 | BRM | Background Reconstruction Module | 백그라운드만 뽑아내기 위한 모듈|
 | TMM | Text Modification Module | 텍스트만 뽑아내기 위한 모듈|
 | PSP | Pyramid Scene Parsing Module | 이미지의 다양한 스케일의 특징을 향상시키기 위해 사용되는 컨볼루션 신경망|
-| SLM | SLM | 백그라운드 필터링 하는 모듈 |
 | TPS | Thin Plate Splines | Is의 기하학적 속성에 따라 It의 방향을 조정 |
 | SHL | Semi-supervised Hybrid Learning | 반지도 학습을 의미한다 |
 

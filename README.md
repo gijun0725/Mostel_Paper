@@ -12,6 +12,7 @@ Mostel Code & Paper review
 | BRM | Background Reconstruction Module | 백그라운드만 뽑아내기 위한 모듈|
 | TMM | Text Modification Module | 텍스트만 뽑아내기 위한 모듈|
 | SLM | SLM | 백그라운드 필터링 하는 모듈 |
+| TPS | Thin Plate Splines | Is의 기하학적 속성에 따라 It의 방향을 조정 |
 
 
 
@@ -50,7 +51,13 @@ Mostel Code & Paper review
 - [(Yang et al. 2019a)] 스타일화 및 비스타일화 서브네트워크를 사용하여 양쪽의 작업을 모두 수행
 
 ### Scene Text Editing
-- SRNet first proposes the word-level editing method
+- SRNet first proposes the word-level editing method[Only simple task]-SRNet을 사용하지 않은 결정적인 이유
+- STRIVE (Subramanian et al. 2021)의 영상을 참고하면 된다.
 
+### Methodology
 
+-MOSTEL은 가독성이 좋지않은 글자를 타겟으로 하였기에 기존의 SRNet의 업그레이드 버전이라 할 수 있다.
+-erase-and-write paradigm [unpaired 방법이라고 이해]
+-design a novel stroke-level modification[좀더 심화된 SRNet 방법]
+-Is 의 인풋결과 Guides[Only text]와 Os[Only Background]가 출력
   

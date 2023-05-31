@@ -62,10 +62,22 @@ Mostel Code & Paper review
 - Is 의 인풋결과 Guides[Only text]와 Os[Only Background]가 출력
 - 텍스트의 특성을 강하게 가지고 있는 Is와 Is의 기하학적 특성을 적용한 It는서로 합쳐진다.
 
-### Background Reconstruction Module
+### BRM[Background Reconstruction Module]
 
 - 인코더 디코더의 구조로 되어있고 좀더 확실한 이미지를 얻기위한 up-sampling이 적용된다.
 - 텍스트를 바꾸면서 백그라운드를 유지하고 싶지만 두개가 한번에 작업되다 보니 서로에게 영향이 있을수 밖에 없기때문에 SRNet도 어느정도 번짐이나 Blur같은 현상을 피할수 없다.
-- 이를 해결하기 위한 개념은 O^s와 Guide_s를 통하여 SLM(백그라운드 필터링 하는 모듈)을 통과시켜 텍스트가 있는 부분을 알려줘서 좀더 잘 백그라운드를 생성한다.
+- 이를 해결하기 위한 개념은 O^s와 Guide_s를 통하여 SLM(백그라운드 필터링 하는 모듈)을 통과시켜 텍스트가 있는 부분을 알려줘서 불필요한 부분과 필요한 부분에 대하여 백그라운드를 생성한다.
+- Os는 GAN loss와 L2 loss를 사용한다
+
+### TMM[Text Modification Module]
+
+- Pre-Transformation and Modification Module 은 전처리 영역이라고 생각하면된다.
+- FC에서 글자의 위치를 잡기위해 anchor점들을 얻어내고 TPS에서 이점을 기준으로 I_t의 텍스트의 위치를 재조정 한다
+- 위에서 언급했듯이 백그라운드를 제거한 텍스트만 있는 이미지를 만들어 낸다 추가적으로 Augmentaion이 진행되는데 이는 이전에서 TPS에서의 위치값으로 I_t가 미리 변경되기 때문에 Augmentation을 진행한다고 해서 위치좌표값이 변하지 않는다.
+
+### MM[Modification Module]
+
+- Up-sampling을 통하여 O^t와 Guide_t를 생성해 낸다.
+- The gradient of connections is blocked 이문장은 skip-connection과 같은 역할로 입력값과 똑같은 텍스트가 나오지 않게 하기위해 사용하는 방식으로 기울기소실문제를 
 
   

@@ -15,6 +15,10 @@ Mostel Code & Paper review
 | TPS | Thin Plate Splines | Is의 기하학적 속성에 따라 It의 방향을 조정 |
 | SHL | Semi-supervised Hybrid Learning | 반지도 학습을 의미한다 |
 
+### Model Architecture
+![image](https://github.com/gijun0725/Mostel_Paper/assets/119472512/dddb18d2-6eb9-4123-bbdc-14cf19749159)
+
+
 
 
 # Abstract

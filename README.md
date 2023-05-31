@@ -2,7 +2,7 @@
 Mostel Code & Paper review
 
 
-*용어 정리
+###용어 정리
 ---
 | name   | Full_name   | Description   |
 |-------|-------|-------|

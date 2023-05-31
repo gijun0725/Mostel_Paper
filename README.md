@@ -120,9 +120,17 @@ Real Data (실제 데이터):
 ### 실제 데이터 비교 [각 기능을 추가하거나 제거했을 경우]
 ![image](https://github.com/gijun0725/Mostel_Paper/assets/119472512/c176e736-987c-434f-8705-da9b81efd382)
 - w/o SLM : SLM 사용하지 않음
-- w/o BF : Background Filtering사용하지 않음
-- w/o SA : Style augmentaion 사용하지않음
-- w/gradient : 기울기를 추가하면 똑같은 이미지 나올 수 있음
-- w/o : recognizer를 제외했을경우
+- w/o BF : Background Filtering사용하지 않음[이런 경우 똑같은 이미지 생성가능성 있다]
+- w/o SA : Style augmentaion 사용하지않음[이런 경우 똑같은 이미지 생성가능성 있다]
+- w/gradient : 기울기를 추가하면 똑같은 이미지 나올 수 있음[이런 경우 똑같은 이미지 생성가능성 있다]
+- w/o : recognizer를 제외했을경우[인식률이 떨어진다]
 - MOSTEL: 위에서 모든걸 적용하였을경우[가장 좋은 케이스]
 
+# Conclusion
+
+-이 연구에서는 MOSTEL이라는 씬 텍스트 편집을 위한 엔드 투 엔드 학습 가능한 프레임워크를 사용.
+- 한정된 성능을 편집 가이드와 합성 훈련 데이터와 실제 씬 텍스트 이미지 간의 도메인 간격으로 귀속
+- 따라서 Stroke-Level Modification을 도입함으로써, 분산을 제거하고 모델이 텍스트 영역의 편집 규칙에 집중하도록 명시적으로 가이드하는 것을 제안한다. 
+- 또한, 반지도 하이브리드 학습을 도입하여 신경망이 짝지어진 합성 이미지와 라벨이 없는 실제 세계 이미지로 훈련될 수 있도록 한다.
+- 배경 필터링, 스타일 보강 및 무경사한 연결과 같은 여러 가지 방법을 도입하여 모델을 이러한 체계에 적응시킨다.
+- MOSTEL 외에도 Tamper-Syn2k 및 Tamper-Scene이라는 두 가지 평가 데이터셋을 공개하여 객관적 평가를 진행했다.

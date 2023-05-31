@@ -15,4 +15,4 @@ Mostel transfer review and code description
   
 2.Introduction
 
-  -
+  -목적 : 백그라운드 이미지와 기존의 텍스처와 텍스트 스타일을 유지하면서 텍스트를 수정

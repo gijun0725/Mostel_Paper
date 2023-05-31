@@ -13,6 +13,7 @@ Mostel Code & Paper review
 | TMM | Text Modification Module | 텍스트만 뽑아내기 위한 모듈|
 | SLM | SLM | 백그라운드 필터링 하는 모듈 |
 | TPS | Thin Plate Splines | Is의 기하학적 속성에 따라 It의 방향을 조정 |
+| SHL | Semi-supervised Hybrid Learning | 반지도 학습을 의미한다 |
 
 
 
@@ -78,6 +79,19 @@ Mostel Code & Paper review
 ### MM[Modification Module]
 
 - Up-sampling을 통하여 O^t와 Guide_t를 생성해 낸다.
-- The gradient of connections is blocked 이문장은 skip-connection과 같은 역할로 입력값과 똑같은 텍스트가 나오지 않게 하기위해 사용하는 방식으로 기울기소실문제를 
+- The gradient of connections is blocked 이문장은 skip-connection과 같은 역할로 입력값과 똑같은 텍스트가 나오지 않게 하기위해 사용하는 방식으로 기울기 소실 문제를 해결한다.
+- SLM은 이러한 정보를 가지고 텍스트와 백그라운드를 더 잘구분할 수 있는것이다. 
 
-  
+### Semi-supervised Hybrid Learning
+
+- 실제 이미지에서는 라벨값이 없기때문에 기존 이미지에서 텍스트를 지운후에 기존의 즉 I_s가 지워진 상태에서 다시 I_s를 재구성하기 때문에 합성이미지와 구조는 같지만 다른 의미를 가지며 이때 사용하는 Loss는  Lrec (재구성 손실)과 Lvgg (스타일 손실) 두가지로 구성된다.
+- 위에서 언급한 방법은 다른이미지도 똑같은 결과를 초래 할 수 있는 항등매핑의 가능성이 있어서 단점이라고 볼 수 있다.
+
+### Dataset
+Synthetic Data (합성 데이터)
+
+
+- Supervised Training용으로 15만 개의 라벨이 달린 이미지를 생성
+- Tamper-Syn2k 평가를 위해 2,000개의 이미지를 생성
+- 생성된 이미지는 다른 텍스트를 가지지만 동일한 스타일(폰트, 크기, 색상, 공간 변환, 배경 이미지)을 가진다.
+- 300개의 폰트와 12,000개의 배경 이미지를 사용하며, 무작위로 회전, 곡선 및 원근 변환을 적용

@@ -8,4 +8,7 @@ Mostel transfer review and code description
 
 1.Abstract<br>
   -stroke guidance maps를 통해서 수정하고자하는 영역을 지정
-  -모든 픽셀을 고려해서 하는 작업이 아니다 텍스트가 있는 부분에 집중을 먼저한다
+  
+  -모든 픽셀을 고려해서 하는 작업이 아니다 텍스트가 있는 부분에 집중
+  
+  -합성이미지와 실제사진의 학습을 위해 반지도 학습을 
